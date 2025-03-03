@@ -1,19 +1,19 @@
-import java.util.scanner;
 public class PracticeProblem {
 
 	public static void main(String args[]) {
 
 	} 
 	public static String pluralize(String word){
-		if (word.endsWith("y")){
-			return "ies";
-		}
-
-		else if(word.endsWith("ey")){
+		word = word.toLowerCase();
+		if (word.endsWith("ey")){
 			return "eys";
 		}
 
-		else if (words.endsWith("ife")){
+		else if(word.endsWith("y")){
+			return "ies";
+		}
+
+		else if (word.endsWith("ife")){
 			return "ives";
 		}
 		else{
